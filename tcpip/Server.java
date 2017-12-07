@@ -15,7 +15,8 @@ class Server
 
     while(true)
     {
-      //create server socket on port 5000 ServerSocket ss=new ServerSocket(5000);
+      //create server socket on port 5000
+      ServerSocket ss=new ServerSocket(5000);
       System.out.println ("Waiting for request");
       Socket s=ss.accept();
 
