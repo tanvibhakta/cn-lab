@@ -6,6 +6,17 @@ public class BellmanFord
   private int num_ver;
   public static final int MAX_VALUE = 999;
 
+  public void printAM(int A[][])
+  {
+    /** HELPER FUNCTION TO PRINT THE ADJECENCY MATRIX*/
+    for ( int i=1; i<=num_ver; i++ )
+    {  for (int j=1; j<=num_ver; j++ )
+          System.out.print(A[i][j]+ ' ');
+       System.out.println();
+    }
+  }
+
+
   public BellmanFord(int num_ver)
   {
     this.num_ver = num_ver;
