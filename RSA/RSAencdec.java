@@ -5,10 +5,12 @@ class RSAencdec
 {
   public static void main(String[] args)
   {
+    // accept arguments Public key, private key, n and ?!
     BigInteger bigB_pubkey = new BigInteger(args[0]);
     BigInteger bigB_prvkey = new BigInteger(args[1]);
     BigInteger bigB_n = new BigInteger(args[2]);
 
+    // The message to be encoded
     int asciiVal=Integer.parseInt(args[3]);
 
     BigInteger bigB_val=new BigInteger(""+asciiVal);
